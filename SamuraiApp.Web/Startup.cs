@@ -36,7 +36,7 @@ namespace SamuraiApp.Web
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddDbContext<SamuraiContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SamuraiConnection")));
+            services.AddDbContext<SamuraiContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SamuraiConnectionMac")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
